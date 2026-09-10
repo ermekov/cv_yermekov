@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "titleDefault": "Yerassyl Yermekov — Junior Python Developer | Backend & AI Engineering",
+    "titleTemplate": "%s — Yerassyl Yermekov",
+    "description": "Junior Python Developer and IITU Software Engineering graduate building backend systems and AI-powered applications with Python."
+  },
+  "site": {
+    "location": "Astana, Kazakhstan"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "stack": "Stack",
+    "contact": "Contact",
+    "downloadCv": "Download CV",
+    "contactCta": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "skipToContent": "Skip to content"
+  },
+  "languageSwitcher": {
+    "label": "Select language"
+  },
+  "hero": {
+    "headline": "Building <hl>backend systems</hl> and <hl>AI-powered applications</hl> with Python.",
+    "sub": "A recent Software Engineering graduate from IITU. I build practical backend systems and AI-powered projects — not just class assignments.",
+    "availability": "Open to opportunities",
+    "classOf": "Class of {year}",
+    "viewProjects": "View projects",
+    "downloadCv": "Download CV",
+    "github": "GitHub"
+  },
+  "heroVisual": {
+    "ariaLabel": "Diagram showing a system flow: Python feeds an API, which feeds an AI reasoning layer, which drives automation, which produces a business outcome.",
+    "flowLabel": "system.flow",
+    "statusLabel": "status",
+    "statusValue": "running",
+    "stagePython": "Python",
+    "stagePythonNote": "Django · FastAPI",
+    "stageApi": "API",
+    "stageApiNote": "Telegram · REST",
+    "stageAi": "AI",
+    "stageAiNote": "assistant · recommendations",
+    "stageAutomation": "Automation",
+    "stageAutomationNote": "n8n · workflows",
+    "stageBusiness": "Business",
+    "stageBusinessNote": "PeakRent · Ken Tereze"
+  },
+  "about": {
+    "eyebrow": "About",
+    "heading": "Recently graduated. Already building real systems.",
+    "paragraph1": "I'm a recent Software Engineering graduate from IITU, focused on Python development, backend systems and AI engineering. My practical experience comes from building complete projects: a diploma project with a PostgreSQL database and an AI recommendation layer, an AI assistant integrating Telegram, WhatsApp and Instagram, and Ken Tereze AI, a Telegram-based pricing automation system.",
+    "paragraph2": "I work with Python, SQL, PostgreSQL and Django, integrate APIs and external services, and use n8n and Claude Code to move fast on automation. I'm early in my career, but I already build complete, working systems — from database schema to a deployed product.",
+    "factGraduate": "Software Engineering — IITU",
+    "factCurrently": "Currently",
+    "factFocus": "Focus",
+    "factBasedIn": "Based in",
+    "careerGoal": "Looking for opportunities in Python backend development and AI engineering."
+  },
+  "projects": {
+    "eyebrow": "Projects",
+    "heading": "Selected projects",
+    "sub": "Practical work with Python, backend development, databases, APIs, AI integrations and automation.",
+    "viewCaseStudy": "View case study",
+    "github": "GitHub",
+    "moreTech": "+{count} more",
+    "moreProjectsTitle": "More projects",
+    "moreProjectsText": "This list grows as I ship more. New work gets added here without a website rebuild."
+  },
+  "credibility": {
+    "label": "Grounded in",
+    "items": [
+      "API Design",
+      "Database Design",
+      "Business Logic",
+      "AI Integration",
+      "Automation",
+      "Async Processing"
+    ]
+  },
+  "stack": {
+    "eyebrow": "Stack",
+    "heading": "Technical Stack"
+  },
+  "certificates": {
+    "heading": "Continuous Learning",
+    "categoryAI": "AI",
+    "categoryComputerScience": "Computer Science",
+    "categoryWeb": "Web",
+    "categoryDesign": "Design"
+  },
+  "currentlyBuilding": {
+    "heading": "Currently Building"
+  },
+  "languages": {
+    "kazakhName": "Kazakh",
+    "kazakhLevel": "Native",
+    "russianName": "Russian",
+    "russianLevel": "Advanced",
+    "englishName": "English",
+    "englishLevel": "Pre-Intermediate"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "heading": "Let's talk about the next opportunity.",
+    "sub": "I'm open to Junior Python Developer and entry-level Software Engineering opportunities focused on backend development, AI engineering and automation.",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "email": "Email",
+    "downloadCv": "Download CV",
+    "languagesLabel": "Languages",
+    "formName": "Name",
+    "formEmail": "Email",
+    "formMessage": "Message",
+    "formNamePlaceholder": "Your name",
+    "formEmailPlaceholder": "you@company.com",
+    "formMessagePlaceholder": "What are you building?",
+    "send": "Send message",
+    "formNote": "Opens your email client — nothing is stored.",
+    "mailSubject": "Opportunity — from {name}",
+    "mailSubjectFallback": "your website"
+  },
+  "footer": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "email": "Email"
+  },
+  "status": {
+    "completed": "Completed",
+    "building": "Building",
+    "inProgress": "In progress",
+    "experiment": "Experiment",
+    "planned": "Planned"
+  },
+  "projectPage": {
+    "allProjects": "All projects",
+    "problem": "Problem",
+    "solution": "Solution",
+    "architecture": "Architecture",
+    "keyFeatures": "Key features",
+    "technologyStack": "Technology stack",
+    "challenges": "Challenges",
+    "whatILearned": "What I learned",
+    "screenshots": "Screenshots",
+    "viewOnGithub": "View on GitHub",
+    "liveDemo": "Live demo",
+    "nextProject": "Next project"
+  },
+  "gallery": {
+    "label": "Project visual",
+    "comingSoon": "Screenshots coming soon",
+    "instructions": "Drop images into /public/projects/ to replace this placeholder."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you're looking for doesn't exist or has moved.",
+    "backHome": "Back to home"
+  }
+}

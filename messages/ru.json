@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "titleDefault": "Ерасыл Ермеков — Junior Python Developer | Backend & AI Engineering",
+    "titleTemplate": "%s — Ерасыл Ермеков",
+    "description": "Junior Python Developer, выпускник Software Engineering в IITU — разрабатываю backend-системы и AI-приложения на Python."
+  },
+  "site": {
+    "location": "Астана, Казахстан"
+  },
+  "nav": {
+    "home": "Главная",
+    "about": "Обо мне",
+    "projects": "Проекты",
+    "stack": "Стек",
+    "contact": "Контакты",
+    "downloadCv": "Скачать резюме",
+    "contactCta": "Связаться",
+    "openMenu": "Открыть меню",
+    "closeMenu": "Закрыть меню",
+    "skipToContent": "Перейти к содержимому"
+  },
+  "languageSwitcher": {
+    "label": "Выбрать язык"
+  },
+  "hero": {
+    "headline": "Разрабатываю <hl>backend-системы</hl> и <hl>AI-приложения</hl> на Python.",
+    "sub": "Недавно окончил Software Engineering в IITU. Создаю практичные backend-системы и AI-проекты — а не только учебные задания.",
+    "availability": "Открыт к предложениям",
+    "classOf": "Выпуск {year} года",
+    "viewProjects": "Смотреть проекты",
+    "downloadCv": "Скачать резюме",
+    "github": "GitHub"
+  },
+  "heroVisual": {
+    "ariaLabel": "Схема системы: Python передаёт данные в API, API — в AI-слой рассуждений, который запускает автоматизацию, а та даёт бизнес-результат.",
+    "flowLabel": "system.flow",
+    "statusLabel": "статус",
+    "statusValue": "работает",
+    "stagePython": "Python",
+    "stagePythonNote": "Django · FastAPI",
+    "stageApi": "API",
+    "stageApiNote": "Telegram · REST",
+    "stageAi": "AI",
+    "stageAiNote": "ассистент · рекомендации",
+    "stageAutomation": "Автоматизация",
+    "stageAutomationNote": "n8n · workflow",
+    "stageBusiness": "Бизнес",
+    "stageBusinessNote": "PeakRent · Ken Tereze"
+  },
+  "about": {
+    "eyebrow": "Обо мне",
+    "heading": "Недавний выпускник. Уже создаю реальные системы.",
+    "paragraph1": "Я недавно окончил Software Engineering в IITU и специализируюсь на Python-разработке, backend-системах и AI engineering. Практический опыт получил на реальных проектах: дипломном проекте с базой данных PostgreSQL и AI-слоем рекомендаций, AI-ассистенте, работающем в Telegram, WhatsApp и Instagram, и Ken Tereze AI — системе автоматизации расчёта цен на базе Telegram.",
+    "paragraph2": "Работаю с Python, SQL, PostgreSQL и Django, интегрирую API и внешние сервисы, использую n8n и Claude Code для быстрой автоматизации. Я в начале карьеры, но уже строю полноценные рабочие системы — от схемы базы данных до готового продукта.",
+    "factGraduate": "Software Engineering — IITU",
+    "factCurrently": "Сейчас",
+    "factFocus": "Фокус",
+    "factBasedIn": "Живу в",
+    "careerGoal": "Ищу возможности для развития в Python backend-разработке и AI engineering."
+  },
+  "projects": {
+    "eyebrow": "Проекты",
+    "heading": "Избранные проекты",
+    "sub": "Практическая работа с Python, backend-разработкой, базами данных, API, AI-интеграциями и автоматизацией.",
+    "viewCaseStudy": "Смотреть кейс",
+    "github": "GitHub",
+    "moreTech": "+{count} ещё",
+    "moreProjectsTitle": "Другие проекты",
+    "moreProjectsText": "Список пополняется по мере того, как я делаю новые проекты. Новая работа появляется здесь без пересборки сайта."
+  },
+  "credibility": {
+    "label": "Основано на",
+    "items": [
+      "Проектирование API",
+      "Проектирование БД",
+      "Бизнес-логика",
+      "AI-интеграция",
+      "Автоматизация",
+      "Асинхронная обработка"
+    ]
+  },
+  "stack": {
+    "eyebrow": "Стек",
+    "heading": "Технологический стек"
+  },
+  "certificates": {
+    "heading": "Дополнительное обучение",
+    "categoryAI": "AI",
+    "categoryComputerScience": "Информатика",
+    "categoryWeb": "Веб-разработка",
+    "categoryDesign": "Дизайн"
+  },
+  "currentlyBuilding": {
+    "heading": "Сейчас работаю над"
+  },
+  "languages": {
+    "kazakhName": "Казахский",
+    "kazakhLevel": "Родной",
+    "russianName": "Русский",
+    "russianLevel": "Продвинутый",
+    "englishName": "Английский",
+    "englishLevel": "Ниже среднего"
+  },
+  "contact": {
+    "eyebrow": "Контакты",
+    "heading": "Буду рад обсудить следующую возможность.",
+    "sub": "Открыт к позициям Junior Python Developer и entry-level ролям в Software Engineering с фокусом на backend-разработку, AI engineering и автоматизацию.",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "email": "Email",
+    "downloadCv": "Скачать резюме",
+    "languagesLabel": "Языки",
+    "formName": "Имя",
+    "formEmail": "Email",
+    "formMessage": "Сообщение",
+    "formNamePlaceholder": "Ваше имя",
+    "formEmailPlaceholder": "you@company.com",
+    "formMessagePlaceholder": "Что вы разрабатываете?",
+    "send": "Отправить сообщение",
+    "formNote": "Откроется почтовый клиент — ничего не сохраняется.",
+    "mailSubject": "Возможность сотрудничества — от {name}",
+    "mailSubjectFallback": "вашего сайта"
+  },
+  "footer": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "email": "Email"
+  },
+  "status": {
+    "completed": "Завершён",
+    "building": "В разработке",
+    "inProgress": "В процессе",
+    "experiment": "Эксперимент",
+    "planned": "Запланировано"
+  },
+  "projectPage": {
+    "allProjects": "Все проекты",
+    "problem": "Проблема",
+    "solution": "Решение",
+    "architecture": "Архитектура",
+    "keyFeatures": "Ключевые функции",
+    "technologyStack": "Технологический стек",
+    "challenges": "Сложности",
+    "whatILearned": "Чему я научился",
+    "screenshots": "Скриншоты",
+    "viewOnGithub": "Смотреть на GitHub",
+    "liveDemo": "Демо",
+    "nextProject": "Следующий проект"
+  },
+  "gallery": {
+    "label": "Изображение проекта",
+    "comingSoon": "Скриншоты скоро появятся",
+    "instructions": "Добавьте изображения в /public/projects/, чтобы заменить эту заглушку."
+  },
+  "notFound": {
+    "title": "Страница не найдена",
+    "description": "Страницы, которую вы ищете, не существует или она была перемещена.",
+    "backHome": "На главную"
+  }
+}

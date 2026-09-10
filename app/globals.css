@@ -1,0 +1,283 @@
+@import "tailwindcss";
+
+:root {
+  /* Surfaces — a cool, slightly desaturated near-black with three depth levels */
+  --bg: #08090c;
+  --bg-elevated: #0c0e12;
+  --surface: #101319;
+  --surface-hover: #151922;
+  --border: rgba(255, 255, 255, 0.075);
+  --border-strong: rgba(255, 255, 255, 0.14);
+
+  /* Text */
+  --text-primary: #f1f2f5;
+  --text-secondary: #99a0ac;
+  --text-tertiary: #7a8290;
+
+  /* One accent, used deliberately. A quiet violet exists only to tell the
+     second project apart — it is never used as a second "brand" color. */
+  --accent: #4a5fee;
+  --accent-soft: rgba(74, 95, 238, 0.12);
+  --accent-strong: #6d7bff;
+  --violet: #8577e8;
+  --amber: #d1a15f;
+  --emerald: #57bd8e;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary: var(--text-tertiary);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-strong: var(--accent-strong);
+  --color-violet: var(--violet);
+  --color-amber: var(--amber);
+  --color-emerald: var(--emerald);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains);
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto;
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+html {
+  background: var(--bg);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--accent-strong);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Type scale — one sans family carries the whole page; scale differences */
+/* do the work of hierarchy instead of weight or color changes.           */
+/* ---------------------------------------------------------------------- */
+
+.text-display {
+  font-size: clamp(2.75rem, 3.2vw + 2rem, 5.25rem);
+  line-height: 1.03;
+  letter-spacing: -0.03em;
+  font-weight: 560;
+}
+
+.text-h1 {
+  font-size: clamp(2rem, 1.4vw + 1.6rem, 2.75rem);
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  font-weight: 540;
+}
+
+.text-h2 {
+  font-size: clamp(1.375rem, 0.6vw + 1.2rem, 1.625rem);
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  font-weight: 540;
+}
+
+/* A quiet running label used for section identity — sentence case, small
+   tracking, never a boxed pill. Numbers (when the content is genuinely a
+   sequence) are set in the mono face; the label itself stays in the sans
+   family so it doesn't read as "template metadata". */
+.section-label {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.625rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  letter-spacing: 0.01em;
+}
+
+.section-label .num {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-tertiary);
+  opacity: 0.7;
+}
+
+/* Reserved for technical / code-adjacent tokens: tech names, stack items,
+   metadata values, project years — not for every heading eyebrow. */
+.tag-mono {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.01em;
+}
+
+/* Same visual weight as .tag-mono, but in the sans family. Use this for any
+   *translated* metadata (dates, statuses, categories, locations) — the
+   monospace face is reserved for content that is always Latin (technology
+   names, proper nouns), because JetBrains Mono's Cyrillic set doesn't cover
+   every Kazakh-specific letter (Ә Ғ Қ Ң Ұ Һ). Mixing translated copy into
+   .tag-mono risks a silent per-glyph font fallback in the Kazakh locale. */
+.tag-label {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.rule {
+  height: 1px;
+  background: var(--border);
+  border: none;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.text-pretty {
+  text-wrap: pretty;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Motion — a single orchestrated hero entrance plus functional hovers.   */
+/* ---------------------------------------------------------------------- */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+.magnetic {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .magnetic {
+    transition: none !important;
+    transform: none !important;
+  }
+}
+
+.link-underline {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: background-size 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.link-underline:hover,
+.link-underline:focus-visible {
+  background-size: 100% 1px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: #21242c;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2c303a;
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.018) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse 70% 60% at 30% 0%, black 25%, transparent 80%);
+}
+
+.section-pad {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.section-pad-tight {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+
+@media (max-width: 640px) {
+  .section-pad {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .section-pad-tight {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@keyframes pulse-travel {
+  0% {
+    top: 0%;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
+}
+
+.pulse-dot {
+  animation: pulse-travel 4.2s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pulse-dot {
+    animation: none;
+    opacity: 0.9;
+  }
+}

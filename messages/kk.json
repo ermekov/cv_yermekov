@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "titleDefault": "Ерасыл Ермеков — Junior Python Developer | Backend & AI Engineering",
+    "titleTemplate": "%s — Ерасыл Ермеков",
+    "description": "Junior Python Developer, IITU-де Software Engineering мамандығын бітірген түлек — Python арқылы backend жүйелері мен AI-қосымшаларын әзірлеймін."
+  },
+  "site": {
+    "location": "Астана, Қазақстан"
+  },
+  "nav": {
+    "home": "Басты бет",
+    "about": "Мен туралы",
+    "projects": "Жобалар",
+    "stack": "Стек",
+    "contact": "Байланыс",
+    "downloadCv": "Резюмені жүктеу",
+    "contactCta": "Хабарласу",
+    "openMenu": "Мәзірді ашу",
+    "closeMenu": "Мәзірді жабу",
+    "skipToContent": "Мазмұнға өту"
+  },
+  "languageSwitcher": {
+    "label": "Тілді таңдау"
+  },
+  "hero": {
+    "headline": "Python арқылы <hl>backend жүйелерін</hl> және <hl>AI-қосымшаларын</hl> әзірлеймін.",
+    "sub": "IITU-дің Software Engineering мамандығын жуырда бітірдім. Оқу тапсырмаларымен шектелмей, практикалық backend жүйелері мен AI жобаларын құрамын.",
+    "availability": "Ұсыныстарға ашықпын",
+    "classOf": "{year} жылғы түлек",
+    "viewProjects": "Жобаларды қарау",
+    "downloadCv": "Резюмені жүктеу",
+    "github": "GitHub"
+  },
+  "heroVisual": {
+    "ariaLabel": "Жүйе ағынының сызбасы: Python деректі API-ге береді, API оны AI пайымдау қабатына жібереді, ол автоматтандыруды іске қосады, ал автоматтандыру бизнес нәтижесін тудырады.",
+    "flowLabel": "system.flow",
+    "statusLabel": "күй",
+    "statusValue": "жұмыс істеп тұр",
+    "stagePython": "Python",
+    "stagePythonNote": "Django · FastAPI",
+    "stageApi": "API",
+    "stageApiNote": "Telegram · REST",
+    "stageAi": "AI",
+    "stageAiNote": "ассистент · ұсыныстар",
+    "stageAutomation": "Автоматтандыру",
+    "stageAutomationNote": "n8n · workflow",
+    "stageBusiness": "Бизнес",
+    "stageBusinessNote": "PeakRent · Ken Tereze"
+  },
+  "about": {
+    "eyebrow": "Мен туралы",
+    "heading": "Жуырда бітірдім. Нақты жүйелер құрып жатырмын.",
+    "paragraph1": "IITU-де Software Engineering мамандығын жуырда бітірдім, Python әзірлеу, backend жүйелері және AI engineering бағыттарына маманданамын. Тәжірибемді нақты жобалар үстінде жинадым: PostgreSQL дерекқоры және AI ұсыныс қабаты бар дипломдық жоба, Telegram, WhatsApp және Instagram арқылы жұмыс істейтін AI-ассистент, әрі Telegram негізіндегі баға есептеуді автоматтандыратын Ken Tereze AI жүйесі.",
+    "paragraph2": "Python, SQL, PostgreSQL және Django-мен жұмыс істеймін, API мен сыртқы қызметтерді біріктіремін, автоматтандыруды жылдам жүргізу үшін n8n мен Claude Code қолданамын. Мансабымның басында тұрсам да, дерекқор схемасынан бастап дайын өнімге дейін толыққанды жұмыс істейтін жүйелер құрамын.",
+    "factGraduate": "Software Engineering — IITU",
+    "factCurrently": "Қазір",
+    "factFocus": "Бағыт",
+    "factBasedIn": "Тұратын жері",
+    "careerGoal": "Python backend әзірлеу және AI engineering бағыттарында кәсіби даму мүмкіндігін іздеймін."
+  },
+  "projects": {
+    "eyebrow": "Жобалар",
+    "heading": "Негізгі жобаларым",
+    "sub": "Python, backend әзірлеу, дерекқорлар, API, AI интеграциялары және автоматтандыру бойынша практикалық жұмысым.",
+    "viewCaseStudy": "Кейсті қарау",
+    "github": "GitHub",
+    "moreTech": "тағы {count}",
+    "moreProjectsTitle": "Басқа жобалар",
+    "moreProjectsText": "Жаңа жобалар қосылған сайын бұл тізім толығады. Жаңа жұмыстар сайтты қайта құрмай-ақ осында қосылады."
+  },
+  "credibility": {
+    "label": "Негізі",
+    "items": [
+      "API жобалау",
+      "Дерекқорды жобалау",
+      "Бизнес-логика",
+      "AI интеграциясы",
+      "Автоматтандыру",
+      "Асинхронды өңдеу"
+    ]
+  },
+  "stack": {
+    "eyebrow": "Стек",
+    "heading": "Технологиялық стек"
+  },
+  "certificates": {
+    "heading": "Қосымша білім",
+    "categoryAI": "AI",
+    "categoryComputerScience": "Компьютерлік ғылымдар",
+    "categoryWeb": "Веб-әзірлеу",
+    "categoryDesign": "Дизайн"
+  },
+  "currentlyBuilding": {
+    "heading": "Қазір әзірлеп жатқаным"
+  },
+  "languages": {
+    "kazakhName": "Қазақ тілі",
+    "kazakhLevel": "Ана тілі",
+    "russianName": "Орыс тілі",
+    "russianLevel": "Жетік",
+    "englishName": "Ағылшын тілі",
+    "englishLevel": "Негізгі деңгей"
+  },
+  "contact": {
+    "eyebrow": "Байланыс",
+    "heading": "Келесі кәсіби мүмкіндікті бірге талқылайық.",
+    "sub": "Backend әзірлеу, AI engineering және автоматтандыруға бағытталған Junior Python Developer және entry-level Software Engineering лауазымдарына ашықпын.",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "email": "Email",
+    "downloadCv": "Резюмені жүктеу",
+    "languagesLabel": "Тілдер",
+    "formName": "Аты-жөні",
+    "formEmail": "Email",
+    "formMessage": "Хабарлама",
+    "formNamePlaceholder": "Атыңыз",
+    "formEmailPlaceholder": "you@company.com",
+    "formMessagePlaceholder": "Не жасап жатырсыз?",
+    "send": "Хабарламаны жіберу",
+    "formNote": "Электрондық пошта клиенті ашылады — ештеңе сақталмайды.",
+    "mailSubject": "Ынтымақтастық мүмкіндігі — {name} тарапынан",
+    "mailSubjectFallback": "сіздің сайтыңыз"
+  },
+  "footer": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "email": "Email"
+  },
+  "status": {
+    "completed": "Аяқталды",
+    "building": "Әзірленуде",
+    "inProgress": "Үдерісте",
+    "experiment": "Эксперимент",
+    "planned": "Жоспарда"
+  },
+  "projectPage": {
+    "allProjects": "Барлық жобалар",
+    "problem": "Мәселе",
+    "solution": "Шешім",
+    "architecture": "Архитектура",
+    "keyFeatures": "Негізгі мүмкіндіктер",
+    "technologyStack": "Технологиялық стек",
+    "challenges": "Қиындықтар",
+    "whatILearned": "Нені үйрендім",
+    "screenshots": "Скриншоттар",
+    "viewOnGithub": "GitHub-тан қарау",
+    "liveDemo": "Демо-нұсқа",
+    "nextProject": "Келесі жоба"
+  },
+  "gallery": {
+    "label": "Жоба бейнесі",
+    "comingSoon": "Скриншоттар жақында қосылады",
+    "instructions": "Бұл орынбасарды ауыстыру үшін суреттерді /public/projects/ қалтасына қосыңыз."
+  },
+  "notFound": {
+    "title": "Бет табылмады",
+    "description": "Іздеп тұрған бетіңіз жоқ немесе басқа жерге көшірілген.",
+    "backHome": "Басты бетке оралу"
+  }
+}
