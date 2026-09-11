@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { hasLocale } from "next-intl";
@@ -13,6 +12,7 @@ import { accentColorFor } from "@/lib/accent";
 import { getProjectGallery } from "@/lib/projectImages";
 import StatusBadge from "@/components/StatusBadge";
 import GalleryPlaceholder from "@/components/GalleryPlaceholder";
+import ProjectGallery from "@/components/ProjectGallery";
 import Reveal from "@/components/Reveal";
 
 export function generateStaticParams() {
@@ -223,19 +223,7 @@ export default async function ProjectPage({
           <div>
             <h2 className="text-h2 text-text-primary mb-8">{t("screenshots")}</h2>
             {gallery.length > 0 ? (
-              <div className="grid sm:grid-cols-2 gap-4">
-                {gallery.map((src) => (
-                  <div key={src} className="relative aspect-[16/10] overflow-hidden rounded-lg border border-border">
-                    <Image
-                      src={src}
-                      alt={pick(project.title, l)}
-                      fill
-                      sizes="(min-width: 640px) 50vw, 100vw"
-                      className="object-cover"
-                    />
-                  </div>
-                ))}
-              </div>
+              <ProjectGallery images={gallery} alt={pick(project.title, l)} />
             ) : (
               <GalleryPlaceholder accent={project.accent} />
             )}
