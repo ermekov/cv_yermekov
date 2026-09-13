@@ -7,6 +7,7 @@ import Reveal from "@/components/Reveal";
 import Languages from "@/components/Languages";
 import Magnetic from "@/components/Magnetic";
 import SectionLabel from "@/components/SectionLabel";
+import SocialLinks from "@/components/SocialLinks";
 
 export default function Contact() {
   const t = useTranslations("contact");
@@ -58,6 +59,10 @@ export default function Contact() {
                     {t("linkedin")}
                   </a>
                 )}
+              </div>
+
+              <div className="mt-5">
+                <SocialLinks />
               </div>
             </Reveal>
 
