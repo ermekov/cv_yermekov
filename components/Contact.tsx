@@ -14,12 +14,32 @@ export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const subject = encodeURIComponent(t("mailSubject", { name: name || t("mailSubjectFallback") }));
-    const body = encodeURIComponent(`${message}\n\n— ${name}\n${email}`);
-    window.location.href = `mailto:${site.email}?subject=${subject}&body=${body}`;
+    setStatus("sending");
+    try {
+      // Google Apps Script Web Apps don't reply with CORS headers, so the
+      // response here is opaque — we can't read success/error out of it.
+      // "no-cors" + text/plain avoids a CORS preflight that Apps Script
+      // doesn't handle; the script itself still gets a normal JSON body
+      // via e.postData.contents. A resolved fetch (no throw) means the
+      // request reached Google; a genuine failure (offline, blocked, etc.)
+      // throws and lands in the catch block below.
+      await fetch(site.formEndpoint, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({ name, email, message }),
+      });
+      setStatus("success");
+      setName("");
+      setEmail("");
+      setMessage("");
+    } catch {
+      setStatus("error");
+    }
   };
 
   return (
@@ -84,9 +104,10 @@ export default function Contact() {
                   id="name"
                   type="text"
                   required
+                  disabled={status === "sending"}
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="w-full border-0 border-b border-border bg-transparent pb-2.5 text-text-primary placeholder:text-text-tertiary focus:border-accent-strong outline-none transition-colors"
+                  className="w-full border-0 border-b border-border bg-transparent pb-2.5 text-text-primary placeholder:text-text-tertiary focus:border-accent-strong outline-none transition-colors disabled:opacity-50"
                   placeholder={t("formNamePlaceholder")}
                 />
               </div>
@@ -98,9 +119,10 @@ export default function Contact() {
                   id="email"
                   type="email"
                   required
+                  disabled={status === "sending"}
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full border-0 border-b border-border bg-transparent pb-2.5 text-text-primary placeholder:text-text-tertiary focus:border-accent-strong outline-none transition-colors"
+                  className="w-full border-0 border-b border-border bg-transparent pb-2.5 text-text-primary placeholder:text-text-tertiary focus:border-accent-strong outline-none transition-colors disabled:opacity-50"
                   placeholder={t("formEmailPlaceholder")}
                 />
               </div>
@@ -112,20 +134,30 @@ export default function Contact() {
                   id="message"
                   required
                   rows={3}
+                  disabled={status === "sending"}
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
-                  className="w-full border-0 border-b border-border bg-transparent pb-2.5 text-text-primary placeholder:text-text-tertiary focus:border-accent-strong outline-none transition-colors resize-none"
+                  className="w-full border-0 border-b border-border bg-transparent pb-2.5 text-text-primary placeholder:text-text-tertiary focus:border-accent-strong outline-none transition-colors disabled:opacity-50 resize-none"
                   placeholder={t("formMessagePlaceholder")}
                 />
               </div>
               <div className="flex items-center justify-between gap-4 mt-2">
                 <button
                   type="submit"
-                  className="link-underline text-sm font-medium text-text-primary"
+                  disabled={status === "sending"}
+                  className="link-underline text-sm font-medium text-text-primary disabled:opacity-50"
                 >
-                  {t("send")}
+                  {status === "sending" ? t("sending") : t("send")}
                 </button>
-                <p className="text-xs text-text-tertiary">{t("formNote")}</p>
+                <p
+                  className={`text-xs ${
+                    status === "success" ? "text-emerald" : status === "error" ? "text-amber" : "text-text-tertiary"
+                  }`}
+                  role="status"
+                  aria-live="polite"
+                >
+                  {status === "success" ? t("formSuccess") : status === "error" ? t("formError") : t("formNote")}
+                </p>
               </div>
             </form>
           </Reveal>

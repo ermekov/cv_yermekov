@@ -5,7 +5,7 @@
     "description": "Junior Python Developer, IITU-де Software Engineering мамандығын бітірген түлек — Python арқылы backend жүйелері мен AI-қосымшаларын әзірлеймін."
   },
   "site": {
-    "location": "Атырау, Қазақстан"
+    "location": "Астана, Қазақстан"
   },
   "nav": {
     "home": "Басты бет",
@@ -117,9 +117,10 @@
     "formEmailPlaceholder": "you@company.com",
     "formMessagePlaceholder": "Не жасап жатырсыз?",
     "send": "Хабарламаны жіберу",
-    "formNote": "Электрондық пошта клиенті ашылады — ештеңе сақталмайды.",
-    "mailSubject": "Ынтымақтастық мүмкіндігі — {name} тарапынан",
-    "mailSubjectFallback": "сіздің сайтыңыз"
+    "sending": "Жіберілуде…",
+    "formNote": "Хабарлама тікелей жіберіледі — пошта клиенті керек емес.",
+    "formSuccess": "Рахмет — хабарламаңыз жіберілді. Жақын арада жауап беремін.",
+    "formError": "Бір қате кетті. Маған тікелей поштама жазыңыз."
   },
   "footer": {
     "github": "GitHub",

@@ -5,7 +5,7 @@
     "description": "Junior Python Developer, выпускник Software Engineering в IITU — разрабатываю backend-системы и AI-приложения на Python."
   },
   "site": {
-    "location": "Атырау, Казахстан"
+    "location": "Астана, Казахстан"
   },
   "nav": {
     "home": "Главная",
@@ -117,9 +117,10 @@
     "formEmailPlaceholder": "you@company.com",
     "formMessagePlaceholder": "Что вы разрабатываете?",
     "send": "Отправить сообщение",
-    "formNote": "Откроется почтовый клиент — ничего не сохраняется.",
-    "mailSubject": "Возможность сотрудничества — от {name}",
-    "mailSubjectFallback": "вашего сайта"
+    "sending": "Отправка…",
+    "formNote": "Отправляется напрямую — почтовый клиент не нужен.",
+    "formSuccess": "Спасибо — сообщение отправлено. Отвечу в ближайшее время.",
+    "formError": "Что-то пошло не так. Напишите мне напрямую на почту."
   },
   "footer": {
     "github": "GitHub",

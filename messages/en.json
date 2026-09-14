@@ -5,7 +5,7 @@
     "description": "Junior Python Developer and IITU Software Engineering graduate building backend systems and AI-powered applications with Python."
   },
   "site": {
-    "location": "Atyrau, Kazakhstan"
+    "location": "Astana, Kazakhstan"
   },
   "nav": {
     "home": "Home",
@@ -117,9 +117,10 @@
     "formEmailPlaceholder": "you@company.com",
     "formMessagePlaceholder": "What are you building?",
     "send": "Send message",
-    "formNote": "Opens your email client — nothing is stored.",
-    "mailSubject": "Opportunity — from {name}",
-    "mailSubjectFallback": "your website"
+    "sending": "Sending…",
+    "formNote": "Sent directly — no email client needed.",
+    "formSuccess": "Thanks — your message is on its way. I'll get back to you soon.",
+    "formError": "Something went wrong. Please email me directly instead."
   },
   "footer": {
     "github": "GitHub",
